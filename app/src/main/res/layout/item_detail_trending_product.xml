@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detailProduct"
+            type="com.example.tiki.module.entity.DataItem" />
+        <variable
+            name="convert"
+            type="com.example.tiki.db.ConvertBinding" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/crard"
+        app:cardElevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                imgProductTrend="@{detailProduct.thumbnailUrl}"
+                android:id="@+id/imgDetailProduct"
+                android:layout_width="195dp"
+                android:layout_height="190dp" />
+            <ImageView
+                android:id="@+id/imgBadge"
+                android:layout_marginTop="4dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/nameDetailProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="170dp"
+                android:text="@{detailProduct.name}" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <RatingBar
+                    android:id="@+id/dgiaDetailProduct"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:numStars="5"
+
+                    android:progressTint="#FDD836"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/dabanDetailProduct"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{detailProduct.quantitySold.text}"
+                    tools:text="10000+"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/priceDetailProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100000"
+                    />
+
+                <TextView
+                    android:id="@+id/giamgiaDetailProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:background="@drawable/custom_discountrate"
+                    android:textColor="#FF424E"
+                    android:text="-90%" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imgBadgePrice"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

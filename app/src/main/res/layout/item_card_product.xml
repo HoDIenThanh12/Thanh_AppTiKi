@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="showtrend"
+            type="com.example.tiki.module.entity.ItemsItem" />
+        <variable
+            name="itemClick"
+            type="com.example.tiki.db.ConvertBinding" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/colorcard"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+
+
+
+            <TextView
+                android:id="@+id/name_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_toEndOf="@+id/image_product"
+                android:text="@{showtrend.title}"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:gravity="center" />
+
+            <ImageView
+                imgProductTrend="@{showtrend.images.get(0)}"
+                android:layout_marginTop="20dp"
+                android:id="@+id/img_Product"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+
+                />
+
+            <!--        <TextView-->
+<!--            android:onClick="@{()-> itemClick.ItemClick()}"-->
+            <!--            android:id="@+id/category_id"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="20dp"-->
+            <!--            android:layout_marginTop="25dp"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:text="TextView"-->
+            <!--            android:textSize="20dp" />-->
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

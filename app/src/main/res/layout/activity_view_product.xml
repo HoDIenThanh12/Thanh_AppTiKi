@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activityShowTrend"
+            type="com.example.tiki.viewmodule.ProductViewModule" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.ViewProduct"
+        >
+
+        <com.jgabrielfreitas.core.BlurImageView
+            android:id="@+id/image_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp">
+
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:gravity="center"
+                android:text="Đang chờ nhà mạng!"
+                tools:text="kkkk"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+<!--            android:text="@{activityShowTrend.metaData.title ?? `Chờ kết nối internet`}"-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
