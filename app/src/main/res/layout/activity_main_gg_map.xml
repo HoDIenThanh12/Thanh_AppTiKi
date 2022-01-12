@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    class="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MainActivityGgMap">
+    <TextView
+        android:id="@+id/tv_content"
+        android:text="sadfsdfsdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btnEnableGPS"
+        android:text="resquestpermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btnGoneGPS"
+        android:text="open setting resquestpermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <SearchView
+        android:id="@+id/s_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="nhập địa điểm....."
+        android:iconifiedByDefault="false"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/custom_search"
+        />
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:id="@+id/frame_ggMap"
+        tools:ignore="RedundantNamespace" />
+</LinearLayout>

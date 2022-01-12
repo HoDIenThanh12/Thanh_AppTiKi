@@ -15,8 +15,17 @@
         <entry key="..\:/HocTapDienThanh/TMA/TikiThanh2/app/src/main/res/layout/card_product.xml" value="0.1296875" />
         <entry key="..\:/HocTapDienThanh/TMA/TikiThanh2/app/src/main/res/layout/item_card_product.xml" value="0.1" />
         <entry key="..\:/HocTapDienThanh/TMA/TikiThanh2/app/src/main/res/layout/item_detail_trending_product.xml" value="0.25" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18645833333333334" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/drawable/custom_search.xml" value="0.21614583333333334" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18645833333333334" />
         <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/activity_detail_trending_product.xml" value="0.10371376811594203" />
-        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/activity_view_product.xml" value="0.10371376811594203" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/activity_main_broad_cast_receiver.xml" value="0.1816123188405797" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/activity_main_gg_map.xml" value="0.1" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/activity_view_product.xml" value="0.22" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/custom_notification.xml" value="0.1703125" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/fragment_blank_gg_map.xml" value="0.16304347826086957" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/fragment_map.xml" value="0.12877030162412992" />
+        <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/fragment_maps.xml" value="0.1234375" />
         <entry key="..\:/HocTapDienThanh/TMA/TikiThanhCoppy/app/src/main/res/layout/item_detail_trending_product.xml" value="0.10371376811594203" />
       </map>
     </option>

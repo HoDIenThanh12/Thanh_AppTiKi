@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MapFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Spinner
+            android:id="@+id/dr_StyleggMap"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:spinnerMode="dropdown"
+            android:background="@color/yyy"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <!-- TODO: Update blank fragment layout -->
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/google_Map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C3:52:C0:E2:A1:6A:EC:85:5C:66:B6:69:68:58:79:0E:1F:AB:F4:37%3Bcom.example.tiki.fragment
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.tiki.fragment
+
+    SHA-1 certificate fingerprint:
+    C3:52:C0:E2:A1:6A:EC:85:5C:66:B6:69:68:58:79:0E:1F:AB:F4:37
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAYW3m-i2COy8gbMMUmCM_zC9R-xOJLS8c</string>
+</resources>
